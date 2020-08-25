@@ -1,16 +1,21 @@
+:root {
+  --main-dark-color: #64ff5f;
+  --main-darker-color: #0e800a;
+}
+
 html.dark body {
   color: #ddd;
   background-color: #000;
 }
 
 html.dark ::-moz-selection {
-  background: #9375fd;
+  background: var(--main-darker-color);
   color: #fff;
   text-shadow: none
 }
 
 html.dark ::selection {
-  background: #9375fd;
+  background: var(--main-darker-color);
   color: #fff;
   text-shadow: none
 }
@@ -33,7 +38,7 @@ html.dark h6 {
 }
 
 html.dark a,a:hover {
-  color: #9375fd;
+  color: var(--main-dark-color);
   text-decoration: none;
 }
 

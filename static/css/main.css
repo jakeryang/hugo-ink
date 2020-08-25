@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
+:root {
+    --main-color: #14FF0D;
+    --main-color-dark: #0e800a;
+}
+
 body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -9,12 +14,12 @@ body {
 }
 
 a {
-    color: #3700ff;
+    color: var(--main-color);
     text-decoration: none;
     word-break: break-word;
 }
     a:hover {
-        border-bottom: 2px solid #3700ff;
+        border-bottom: 2px solid var(--main-color);
     }
 
 html,button,input,select,textarea {
@@ -22,13 +27,13 @@ html,button,input,select,textarea {
 }
 
 ::-moz-selection {
-    background: #3700ff;
+    background: var(--main-color-dark);
     text-shadow: none;
     color: #fff;
 }
 
 ::selection {
-    background: #3700ff;
+    background: var(--main-color-dark);
     text-shadow: none;
     color: #fff;
 }
@@ -108,7 +113,7 @@ blockquote {
     font-size: 1.4rem;
     font-family: Georgia,bitstream charter,serif;
     border-left: 3px solid;
-    border-color: #3700ff;
+    border-color: var(--main-color);
     padding-left: 20px;
 }
 
@@ -274,7 +279,7 @@ ul {
         color: #333;
     }
     .header nav.social a:hover {
-        color: #3700ff;
+        color: var(--main-color);
     }
 
 .header .site-description nav {
@@ -352,7 +357,7 @@ ul {
 }
 
 .post .draft-label {
-    color: #3700ff;
+    color: var(--main-color);
     text-decoration: none;
     padding: 2px 4px;
     border-radius: 4px;
@@ -362,10 +367,10 @@ ul {
 
 .post .tags a {
     display: inline-block;
-    border: 1px solid #3700ff;
+    border: 1px solid var(--main-color);
     border-radius: 3px;
     padding: 0px 6px;
-    color: #3700ff;
+    color: var(--main-color);
     line-height: 20px;
     font-size: 0.85em;
     text-decoration: none;
@@ -389,7 +394,7 @@ ul {
         color: #666;
     }
     .footer a:hover {
-        color: #3700ff;
+        color: var(--main-color);
     }
 
 .tag-cloud {
